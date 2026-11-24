@@ -1,0 +1,191 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM
+   Multi-Tier Breakpoints: Desktop (1440px), Laptop (1024px), Tablet (768px), Mobile (390px, 360px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Laptop & Intermediate Screens (<= 1180px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .hero-grid {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 40px;
+  }
+
+  .editorial-about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .showcase-editorial-grid,
+  .showcase-editorial-grid.reverse-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cert-item {
+    grid-template-columns: 70px 1.5fr 1fr;
+  }
+
+  .cert-col-tag {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Tablet Viewport (<= 992px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .nav-links {
+    display: none; /* Collapses into mobile drawer */
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-workspace-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .graph-viewport-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sb-flow-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Small Tablet & Mobile Landscape (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Disable custom cursor on touch viewports */
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+
+  .hero-meta-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero-bottom-ribbon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .quick-stats-strip {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .cert-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cert-col-id {
+    color: var(--accent-crimson);
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-center {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Mobile Portrait (<= 480px) & Small Mobile (<= 360px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-magnetic {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-workspace-wrapper {
+    max-width: 100%;
+  }
+
+  .desk-viewport {
+    padding: 12px;
+  }
+
+  .desk-mat {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .desk-laptop,
+  .desk-books,
+  .desk-git,
+  .desk-monitor,
+  .desk-terminal {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+  }
+
+  .sb-flow-ribbon {
+    grid-template-columns: 1fr;
+  }
+
+  .sb-stage-arrow {
+    display: none;
+  }
+
+  .social-links-row {
+    flex-direction: column;
+  }
+
+  .social-pill {
+    text-align: center;
+  }
+
+  .mockup-grid-sim,
+  .collab-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-timeline-col {
+    padding-left: 16px;
+  }
+
+  .timeline-card::before {
+    left: -21px;
+  }
+}

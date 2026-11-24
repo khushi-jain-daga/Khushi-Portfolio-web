@@ -1,0 +1,19 @@
+# Chrome headless profile & temporary directories
+.chrome*
+.chrome_headless_profile*
+.chrome_profile*
+
+# Local test & execution scripts
+powershell.cmd
+capture_screenshots.js
+
+# OS & Environment Metadata
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Package dependencies (zero external dependencies in production)
+node_modules/
+package-lock.json

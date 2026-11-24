@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Khushi Jain Daga — Creative Developer, Software Engineer & B.Tech CSE at JECRC University. Building thoughtful, award-winning digital experiences.">
+  <meta name="author" content="Khushi Jain Daga">
+  <meta name="theme-color" content="#F4F1E8">
+  <title>Khushi Jain Daga — Creative Developer & Software Engineer</title>
+
+  <!-- Typography: Syne, Space Grotesk, Manrope, IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Scripts -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/interactions.js"></script>
+</head>
+<body>
+  <!-- Accessibility Skip Navigation -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- Custom Cursor Elements (Desktop only) -->
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-outline" class="cursor-outline" aria-hidden="true"></div>
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Floating Editorial Header Navigation -->
+  <header id="site-header" class="site-header">
+    <nav class="nav-container wrap" aria-label="Main Navigation">
+      <!-- Custom Monogram Brand -->
+      <a href="#hero" class="brand" aria-label="Khushi Jain Daga — Home">
+        <span class="brand-monogram">KJD</span>
+        <span class="brand-dot"></span>
+        <span class="brand-caption">EXP.01 / 2026</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="nav-links" role="menubar">
+        <a href="#work" class="nav-link" role="menuitem"><span class="nav-num">01</span>Work</a>
+        <a href="#about" class="nav-link" role="menuitem"><span class="nav-num">02</span>About</a>
+        <a href="#skills" class="nav-link" role="menuitem"><span class="nav-num">03</span>Playground</a>
+        <a href="#experience" class="nav-link" role="menuitem"><span class="nav-num">04</span>Tenure</a>
+        <a href="#achievements" class="nav-link" role="menuitem"><span class="nav-num">05</span>Honors</a>
+        <a href="#contact" class="nav-link" role="menuitem"><span class="nav-num">06</span>Contact</a>
+      </div>
+
+      <!-- Action Buttons (Resume & Theme Switcher) -->
+      <div class="nav-actions">
+        <a href="resume.pdf" class="nav-resume-btn" download="Khushi_Jain_Daga_Resume.pdf" aria-label="Download Resume (PDF)">
+          <span>Résumé</span>
+          <svg class="icon-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle visual theme" title="Toggle theme">
+          <span class="theme-toggle-indicator" aria-hidden="true"></span>
+          <span class="theme-label mono-text">THEME</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open mobile menu">
+          <span class="menu-line top"></span>
+          <span class="menu-line bottom"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Editorial Mobile Navigation Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="mono-text drawer-tag">// NAVIGATION MATRIX</div>
+      <button id="mobile-drawer-close" class="drawer-close" aria-label="Close menu">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#work" class="drawer-link"><span class="d-num">01</span><span class="d-text">SELECTED WORK</span></a>
+      <a href="#about" class="drawer-link"><span class="d-num">02</span><span class="d-text">ABOUT & CREDENTIALS</span></a>
+      <a href="#skills" class="drawer-link"><span class="d-num">03</span><span class="d-text">TECHNICAL PLAYGROUND</span></a>
+      <a href="#experience" class="drawer-link"><span class="d-num">04</span><span class="d-text">EXPERIENCE & TENURE</span></a>
+      <a href="#achievements" class="drawer-link"><span class="d-num">05</span><span class="d-text">HONORS & LEADERSHIP</span></a>
+      <a href="#contact" class="drawer-link"><span class="d-num">06</span><span class="d-text">CONTACT INQUIRY</span></a>
+    </div>
+    <div class="drawer-footer">
+      <a href="resume.pdf" class="btn-editorial" download="Khushi_Jain_Daga_Resume.pdf">Download Résumé (PDF) ↓</a>
+      <div class="drawer-meta mono-text">JECRC UNIVERSITY · B.TECH CSE · ROLL 23BCON1665</div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         HERO SECTION: Extraordinary Kinetic 3D Canvas & Swiss Typography
+         ========================================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="wrap hero-container">
+        <!-- Top Editorial Meta Bar -->
+        <div class="hero-meta-bar">
+          <div class="status-badge">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span class="mono-text">AVAILABLE FOR FULL STACK & CREATIVE ROLES</span>
+          </div>
+          <div class="geo-tag mono-text">
+            <span>JAIPUR, IN</span>
+            <span class="divider">/</span>
+            <span id="live-time">12:30 IST</span>
+            <span class="divider">/</span>
+            <span>26.9124° N, 75.7873° E</span>
+          </div>
+        </div>
+
+        <!-- Main Hero Title & Visual Composition -->
+        <div class="hero-grid">
+          <div class="hero-typography">
+            <p class="hero-eyebrow mono-text">// CREATIVE DEVELOPER & SOFTWARE ENGINEER</p>
+            <h1 id="hero-title" class="hero-headline">
+              <span class="reveal-line"><span>KHUSHI</span></span>
+              <span class="reveal-line"><span class="accent-italic">JAIN DAGA<span class="period">.</span></span></span>
+            </h1>
+
+            <div class="hero-subtitles">
+              <span class="sub-item">Creative Developer.</span>
+              <span class="sub-item">Software Engineer.</span>
+              <span class="sub-item">Curious Builder.</span>
+            </div>
+
+            <p class="hero-narrative">
+              I build thoughtful, reliable digital experiences by combining modern software engineering, intuitive human-centred design, and curious problem solving. Specializing in high-performance web systems and full stack architecture.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn-magnetic primary-btn">
+                <span class="btn-text">Explore Selected Work</span>
+                <span class="btn-icon">↓</span>
+              </a>
+              <a href="resume.pdf" class="btn-magnetic secondary-btn" download="Khushi_Jain_Daga_Resume.pdf">
+                <span class="btn-text">Download Résumé</span>
+                <span class="btn-icon">↗</span>
+              </a>
+            </div>
+
+            <div class="academic-quick-meta mono-text">
+              <span>JECRC UNIVERSITY</span>
+              <span class="bullet">▪</span>
+              <span>B.TECH CSE (VII SEM)</span>
+              <span class="bullet">▪</span>
+              <span>CGPA 9.2/10</span>
+            </div>
+          </div>
+
+          <!-- Interactive Developer Workspace: "Inside My Developer World" -->
+          <div class="hero-workspace-wrapper" id="hero-workspace" aria-label="Inside My Developer World - Interactive Workstation">
+            <div class="workspace-card">
+              <div class="workspace-header-bar">
+                <div class="ws-controls">
+                  <span class="ws-dot red"></span>
+                  <span class="ws-dot yellow"></span>
+                  <span class="ws-dot green"></span>
+                </div>
+                <div class="ws-title mono-text">// INSIDE MY DEVELOPER WORLD</div>
+                <div class="ws-badge mono-text">LIVE WORKSTATION</div>
+              </div>
+
+              <!-- Main Isometric / Perspective Desk Environment -->
+              <div class="desk-viewport" id="desk-viewport">
+                <!-- Desk Surface & Accessories -->
+                <div class="desk-mat">
+                  <!-- Item 1: Laptop Computer (Selected Work) -->
+                  <div class="desk-item desk-laptop" id="desk-laptop" title="Laptop: Click to view Selected Work" role="button" tabindex="0" aria-label="Laptop - View Selected Work">
+                    <div class="laptop-screen">
+                      <div class="screen-top-bar">
+                        <span class="code-tab active">App.jsx</span>
+                        <span class="code-tab">qampus.js</span>
+                      </div>
+                      <div class="screen-code mono-text">
+                        <span class="c-kw">import</span> React <span class="c-kw">from</span> <span class="c-str">'react'</span>;<br>
+                        <span class="c-kw">const</span> <span class="c-fn">KhushiPortfolio</span> = () =&gt; {<br>
+                        &nbsp;&nbsp;<span class="c-kw">return</span> &lt;<span class="c-tag">SelectedWork</span> count={<span class="c-num">3</span>} /&gt;;<br>
+                        };
+                      </div>
+                      <div class="screen-glow-accent"></div>
+                    </div>
+                    <div class="laptop-base">
+                      <div class="laptop-trackpad"></div>
+                    </div>
+                    <span class="item-tag mono-text">LAPTOP ↗</span>
+                  </div>
+
+                  <!-- Item 2: Technical Books Stack (Skills Playground) -->
+                  <div class="desk-item desk-books" id="desk-books" title="Technical Books: Click to view Technical Ecosystem" role="button" tabindex="0" aria-label="Books - View Technical Ecosystem">
+                    <div class="book book-3"><span class="book-title mono-text">REACT & 3D</span></div>
+                    <div class="book book-2"><span class="book-title mono-text">DSA & SYSTEMS</span></div>
+                    <div class="book book-1"><span class="book-title mono-text">CLEAN CODE</span></div>
+                    <span class="item-tag mono-text">BOOKS ↗</span>
+                  </div>
+
+                  <!-- Item 3: Git Panel (GitHub Profile) -->
+                  <div class="desk-item desk-git" id="desk-git" title="Git Panel: Click to view GitHub Profile" role="button" tabindex="0" aria-label="Git Panel - View GitHub Profile">
+                    <div class="git-header mono-text">
+                      <span class="git-branch">main*</span>
+                      <span class="git-commits">290+ contrib</span>
+                    </div>
+                    <div class="git-grid">
+                      <div class="git-cell l3"></div><div class="git-cell l1"></div><div class="git-cell l4"></div><div class="git-cell l2"></div><div class="git-cell l4"></div>
+                      <div class="git-cell l2"></div><div class="git-cell l4"></div><div class="git-cell l3"></div><div class="git-cell l4"></div><div class="git-cell l3"></div>
+                      <div class="git-cell l4"></div><div class="git-cell l3"></div><div class="git-cell l2"></div><div class="git-cell l4"></div><div class="git-cell l4"></div>
+                    </div>
+                    <span class="item-tag mono-text">GIT HUB ↗</span>
+                  </div>
+
+                  <!-- Item 4: Studio Monitor Screen (Project Preview) -->
+                  <div class="desk-item desk-monitor" id="desk-monitor" title="Monitor: Click to cycle real project preview" role="button" tabindex="0" aria-label="Monitor - Preview Real Projects">
+                    <div class="monitor-frame">
+                      <div class="monitor-screen" id="monitor-screen">
+                        <div class="preview-badge mono-text" id="preview-badge">EXAMON LMS</div>
+                        <div class="preview-content">
+                          <h5 id="preview-title">Examon Education</h5>
+                          <p class="mono-text" id="preview-tech">React · Firebase · Vercel</p>
+                        </div>
+                        <div class="preview-status mono-text">CLICK TO SWITCH ⟳</div>
+                      </div>
+                      <div class="monitor-stand"></div>
+                      <div class="monitor-base"></div>
+                    </div>
+                    <span class="item-tag mono-text">MONITOR ⟳</span>
+                  </div>
+
+                  <!-- Item 5: Coffee Mug (Personal Trivia) -->
+                  <div class="desk-item desk-coffee" id="desk-coffee" title="Coffee Mug: Click for personal trivia" role="button" tabindex="0" aria-label="Coffee Mug - Personal Trivia">
+                    <div class="coffee-cup">
+                      <div class="coffee-steam">
+                        <span></span><span></span>
+                      </div>
+                      <div class="cup-logo mono-text">KJD</div>
+                      <div class="cup-handle"></div>
+                    </div>
+                    <span class="item-tag mono-text">COFFEE ☕</span>
+                  </div>
+
+                  <!-- Item 6: Interactive Terminal Window -->
+                  <div class="desk-item desk-terminal" id="desk-terminal" role="region" aria-label="Interactive Developer Terminal">
+                    <div class="term-bar">
+                      <span class="term-title mono-text">bash — khushi@dev-station:~</span>
+                      <span class="term-prompt-tag mono-text">TYPE COMMAND</span>
+                    </div>
+                    <div class="term-body" id="term-output">
+                      <div class="term-line welcome mono-text">Khushi Jain Daga Dev Terminal v2.6. Type <span class="c-accent">help</span> for commands.</div>
+                    </div>
+                    <form class="term-input-row" id="term-form" autocomplete="off">
+                      <span class="term-prompt-sym mono-text">khushi@portfolio:~$</span>
+                      <input type="text" id="term-input" class="term-input mono-text" aria-label="Terminal command input" placeholder="type 'help'...">
+                    </form>
+                  </div>
+                </div>
+
+                <!-- Coffee Trivia Balloon Toast (hidden initially) -->
+                <div class="trivia-toast mono-text" id="coffee-trivia-toast" aria-live="polite">
+                  ☕ <strong>Fueling curiosity:</strong> Midnight debugging, SIH HackQuest 9.0 runner-up sprints, and creative WebGL experiments at JECRC University.
+                </div>
+              </div>
+
+              <!-- Workspace Footer Instruction -->
+              <div class="workspace-footer-bar mono-text">
+                <span class="prompt-text">EXPLORE MY DEVELOPER WORLD // CLICK LAPTOP, BOOKS, GIT, MONITOR OR TERMINAL</span>
+                <span class="ws-coords">DESK STATION #01</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Hero Editorial Ribbon -->
+        <div class="hero-bottom-ribbon">
+          <div class="scroll-prompt">
+            <span class="scroll-mouse" aria-hidden="true"></span>
+            <span class="mono-text">SCROLL TO DISCOVER</span>
+          </div>
+          <div class="quick-stats-strip">
+            <div class="stat-pill">
+              <span class="stat-num">9.2</span>
+              <span class="stat-label mono-text">CGPA / 10.0</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">03</span>
+              <span class="stat-label mono-text">PRODUCTION APPS</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">2027</span>
+              <span class="stat-label mono-text">CLASS COHORT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Continuous Kinetic Marquee Ticker -->
+    <div class="ticker-wrapper" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item">REACT.JS</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">THREE.JS & WEBGL</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">FIREBASE ARCHITECTURE</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">SWISS EDITORIAL SYSTEMS</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">FULL STACK ENGINEERING</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">RESPONSIVE DESIGN</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">AI & AUTOMATION</span><span class="ticker-star">✳</span>
+        <!-- Duplicated for seamless continuous scroll -->
+        <span class="ticker-item">REACT.JS</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">THREE.JS & WEBGL</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">FIREBASE ARCHITECTURE</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">SWISS EDITORIAL SYSTEMS</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">FULL STACK ENGINEERING</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">RESPONSIVE DESIGN</span><span class="ticker-star">✳</span>
+        <span class="ticker-item">AI & AUTOMATION</span><span class="ticker-star">✳</span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 01: ABOUT & EDITORIAL BIOGRAPHY
+         ========================================================================== -->
+    <section id="about" class="editorial-section" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <span class="section-tag mono-text">01 // ARCHIVE & BIOGRAPHY</span>
+          <span class="section-serial mono-text">[ SEC.01 ]</span>
+        </div>
+
+        <div class="editorial-about-grid">
+          <!-- Left Column: Oversized Statement -->
+          <div class="about-lead">
+            <h2 id="about-heading" class="editorial-title">
+              Translating technical complexity into <em>purposeful, elegant</em> digital artifacts.
+            </h2>
+            <div class="about-quote-box">
+              <p class="quote-text">
+                "Software engineering is not merely writing instructions for machines; it is designing resilient, intuitive instruments that elevate human capability."
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Academic & Personal Narrative -->
+          <div class="about-narrative">
+            <div class="bio-block">
+              <h3 class="bio-subtitle mono-text">// ACADEMIC PROFILE</h3>
+              <p>
+                I am an undergraduate pursuing a <strong>B.Tech in Computer Science and Engineering (Core)</strong> at <strong>JECRC University, Jaipur</strong> (Session 2023–2027), currently excelling in my <strong>VII Semester</strong> with a cumulative GPA of <strong>9.2 / 10</strong> (Roll Number: <code>23bcon1665</code>).
+              </p>
+              <p>
+                My technical pursuits center around software engineering, full stack application architecture, AI-driven automation, and modern responsive user experience. Through practical internships and real-world products, I bridge backend reliability with front-of-the-screen artistic precision.
+              </p>
+            </div>
+
+            <!-- Credentials & Institutional Spec Table -->
+            <div class="editorial-spec-table">
+              <div class="spec-row">
+                <span class="spec-label mono-text">INSTITUTION</span>
+                <span class="spec-val">JECRC University, Jaipur, Rajasthan</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label mono-text">DEGREE & SPECIALIZATION</span>
+                <span class="spec-val">B.Tech Computer Science and Engineering (Core)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label mono-text">CURRENT STANDING</span>
+                <span class="spec-val">Semester VII · CGPA: 9.2 / 10.0</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label mono-text">ENROLLMENT ID</span>
+                <span class="spec-val mono-text">23bcon1665</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label mono-text">PRIMARY FOCUS</span>
+                <span class="spec-val">Full Stack Development, Three.js, AI Automation, UI/UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 02: SELECTED WORK (3 DISTINCT IMMERSIVE EXPERIENCES)
+         ========================================================================== -->
+    <section id="work" class="editorial-section dark-experience-wrapper" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <span class="section-tag mono-text">02 // SELECTED WORK & CASE STUDIES</span>
+          <span class="section-serial mono-text">[ 03 FEATURED ENTERPRISE & CAMPUS SYSTEMS ]</span>
+        </div>
+
+        <div class="work-intro-banner">
+          <h2 id="work-heading" class="editorial-title light-text">
+            Architected for impact. Engineered with precision.
+          </h2>
+          <p class="work-intro-desc mono-text">
+            Three distinctive production-grade applications highlighting full-stack engineering, 3D campus navigation, and real-time collaboration.
+          </p>
+        </div>
+
+        <!-- Project Showcases -->
+        <div class="showcase-list">
+          <!-- ----------------------------------------------------
+               PROJECT 01: EXAMON EDUCATION
+               ---------------------------------------------------- -->
+          <article class="showcase-item" data-project="01" aria-labelledby="p1-title">
+            <div class="showcase-editorial-grid">
+              <div class="showcase-info">
+                <div class="p-meta mono-text">
+                  <span class="p-index">CASE 01</span>
+                  <span class="p-category">EDTECH / FULL STACK ARCHITECTURE</span>
+                  <span class="p-timeline">MAR – APR 2026</span>
+                </div>
+                <h3 id="p1-title" class="showcase-title">Examon Education</h3>
+                <p class="showcase-summary">
+                  A comprehensive, high-throughput educational technology web application delivering responsive learning interfaces, interactive video lecture series, modular course workflows, and secure Firebase identity management.
+                </p>
+
+                <div class="showcase-specs">
+                  <div class="spec-group">
+                    <span class="spec-header mono-text">// CORE RESPONSIBILITIES</span>
+                    <ul class="spec-bullets">
+                      <li>Engineered reusable component libraries with React.js for student dashboards.</li>
+                      <li>Integrated Firebase Authentication and secured route authorization rules.</li>
+                      <li>Optimized client rendering speeds for seamless video streaming modules.</li>
+                      <li>Configured production continuous deployment and edge hosting on Vercel.</li>
+                    </ul>
+                  </div>
+
+                  <div class="tech-tag-row">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Firebase Auth</span>
+                    <span class="tech-badge">HTML5 / CSS3</span>
+                    <span class="tech-badge">Vercel</span>
+                  </div>
+                </div>
+
+                <div class="showcase-cta">
+                  <a href="https://examoneducation.com" target="_blank" rel="noopener noreferrer" class="btn-magnetic showcase-link-btn" aria-label="Visit Examon Education (opens in new tab)">
+                    <span class="btn-text">Visit Production Site</span>
+                    <span class="btn-icon">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Composition 01: Editorial Browser Mockup & Architecture Schematic -->
+              <div class="showcase-visual-frame frame-edtech">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                  <div class="mockup-url mono-text">https://examoneducation.com</div>
+                  <div class="mockup-secure mono-text">SECURE SSL</div>
+                </div>
+                <div class="mockup-body mockup-examon">
+                  <div class="mockup-hero-band">
+                    <div class="examon-badge mono-text">EXAMON LMS ENGINE</div>
+                    <h4>Interactive Course Modules & Video Streams</h4>
+                  </div>
+                  <div class="mockup-grid-sim">
+                    <div class="sim-card">
+                      <div class="sim-pill mono-text">MODULE 01</div>
+                      <div class="sim-bar"></div>
+                      <div class="sim-sub">Video Lecture Stream · 1080p</div>
+                    </div>
+                    <div class="sim-card">
+                      <div class="sim-pill mono-text">AUTH ENGINE</div>
+                      <div class="sim-bar active"></div>
+                      <div class="sim-sub">Firebase Token Validation · Active</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-tag-bottom mono-text">FIG 1.0 — PRODUCTION ARCHITECTURE COMPOSITION</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ----------------------------------------------------
+               PROJECT 02: QAMPUS
+               ---------------------------------------------------- -->
+          <article class="showcase-item" data-project="02" aria-labelledby="p2-title">
+            <div class="showcase-editorial-grid reverse-layout">
+              <!-- Visual Composition 02: 360° Interactive Campus Radar View -->
+              <div class="showcase-visual-frame frame-qampus">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                  <div class="mockup-url mono-text">github.com/khushi-jain-daga/qampus-app</div>
+                  <div class="mockup-secure mono-text">THREE.JS / WEBGL</div>
+                </div>
+                <div class="mockup-body mockup-threejs">
+                  <div class="radar-sphere-container">
+                    <div class="radar-ring r1"></div>
+                    <div class="radar-ring r2"></div>
+                    <div class="radar-crosshair"></div>
+                    <div class="radar-scan"></div>
+                    <div class="node-marker n1 mono-text">CLASSROOM 402 [VACANT]</div>
+                    <div class="node-marker n2 mono-text">CENTRAL AUDITORIUM</div>
+                    <div class="node-marker n3 mono-text">MAKERSPACE LAB</div>
+                  </div>
+                  <div class="threejs-stat-bar mono-text">
+                    <span>PANORAMA: 360° SPATIAL</span>
+                    <span>LATENCY: &lt;16MS</span>
+                    <span>FIRESTORE: CONNECTED</span>
+                  </div>
+                </div>
+                <div class="frame-tag-bottom mono-text">FIG 2.0 — THREE.JS 360° CAMPUS NAVIGATION RADAR</div>
+              </div>
+
+              <div class="showcase-info">
+                <div class="p-meta mono-text">
+                  <span class="p-index">CASE 02</span>
+                  <span class="p-category">CAMPUS TECH / 3D SPATIAL COMPUTING</span>
+                  <span class="p-timeline">JUN 2026</span>
+                </div>
+                <h3 id="p2-title" class="showcase-title">Qampus</h3>
+                <p class="showcase-summary">
+                  A spatial web application solving complex university campus wayfinding. Integrates panoramic 360-degree virtual facility tours, real-time vacant classroom discovery algorithms, and cloud spatial metadata via Firebase Firestore.
+                </p>
+
+                <div class="showcase-specs">
+                  <div class="spec-group">
+                    <span class="spec-header mono-text">// CORE INNOVATIONS</span>
+                    <ul class="spec-bullets">
+                      <li>Implemented interactive WebGL panoramic projection spheres using Three.js.</li>
+                      <li>Built timetable and vacancy querying synced with Firebase Firestore collections.</li>
+                      <li>Architected lightweight geometry loading to ensure fast rendering on mobile devices.</li>
+                      <li>Developed floor-level switching and search filtering for campus nodes.</li>
+                    </ul>
+                  </div>
+
+                  <div class="tech-tag-row">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Three.js</span>
+                    <span class="tech-badge">Firebase Firestore</span>
+                    <span class="tech-badge">JavaScript (ES6+)</span>
+                  </div>
+                </div>
+
+                <div class="showcase-cta">
+                  <a href="https://github.com/khushi-jain-daga/qampus-app" target="_blank" rel="noopener noreferrer" class="btn-magnetic showcase-link-btn" aria-label="View Qampus repository on GitHub (opens in new tab)">
+                    <span class="btn-text">Explore GitHub Repository</span>
+                    <span class="btn-icon">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ----------------------------------------------------
+               PROJECT 03: TEAMSPACE
+               ---------------------------------------------------- -->
+          <article class="showcase-item" data-project="03" aria-labelledby="p3-title">
+            <div class="showcase-editorial-grid">
+              <div class="showcase-info">
+                <div class="p-meta mono-text">
+                  <span class="p-index">CASE 03</span>
+                  <span class="p-category">COLLABORATION / REAL-TIME CLOUD PLATFORM</span>
+                  <span class="p-timeline">APR 2026</span>
+                </div>
+                <h3 id="p3-title" class="showcase-title">TeamSpace</h3>
+                <p class="showcase-summary">
+                  A high-velocity collaborative digital workspace engineered with reusable modular component interfaces, authenticated session isolation, and persistent cloud document synchronization.
+                </p>
+
+                <div class="showcase-specs">
+                  <div class="spec-group">
+                    <span class="spec-header mono-text">// TECHNICAL HIGHLIGHTS</span>
+                    <ul class="spec-bullets">
+                      <li>Designed modular kanban and shared workspace dashboards in React.</li>
+                      <li>Configured real-time state listeners and asynchronous Firestore persistence.</li>
+                      <li>Implemented role-based workspace memberships and access tokens.</li>
+                      <li>Deployed on Vercel with optimized static asset caching and instant routing.</li>
+                    </ul>
+                  </div>
+
+                  <div class="tech-tag-row">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Vercel</span>
+                  </div>
+                </div>
+
+                <div class="showcase-cta">
+                  <a href="https://teamspace-v7.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-magnetic showcase-link-btn" aria-label="Visit TeamSpace live platform (opens in new tab)">
+                    <span class="btn-text">Visit Live Application</span>
+                    <span class="btn-icon">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Visual Composition 03: Workspace Kanban & Cloud Sync UI -->
+              <div class="showcase-visual-frame frame-teamspace">
+                <div class="mockup-header">
+                  <div class="mockup-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                  <div class="mockup-url mono-text">teamspace-v7.vercel.app</div>
+                  <div class="mockup-secure mono-text">CLOUD PERSISTED</div>
+                </div>
+                <div class="mockup-body mockup-collab">
+                  <div class="collab-header-strip">
+                    <div class="workspace-title mono-text">WORKSPACE // CORE-ENGINEERING</div>
+                    <div class="user-avatars">
+                      <span class="av a1">KJ</span>
+                      <span class="av a2">EX</span>
+                      <span class="av a3">+4</span>
+                    </div>
+                  </div>
+                  <div class="collab-lanes">
+                    <div class="lane">
+                      <span class="lane-title mono-text">QUEUED (04)</span>
+                      <div class="task-card">Auth Token Middleware</div>
+                      <div class="task-card">WebGL Canvas Resize Hook</div>
+                    </div>
+                    <div class="lane">
+                      <span class="lane-title mono-text">IN PROGRESS (02)</span>
+                      <div class="task-card in-dev">Firestore Spatial Sync</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-tag-bottom mono-text">FIG 3.0 — COLLABORATIVE WORKSPACE DASHBOARD</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 03: MY TECHNICAL ECOSYSTEM & SYSTEM BUILDER
+         ========================================================================== -->
+    <section id="skills" class="editorial-section ecosystem-section" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <span class="section-tag mono-text">03 // TECHNICAL KNOWLEDGE GRAPH & ARCHITECTURE</span>
+          <span class="section-serial mono-text">[ RESUME-VERIFIED ECOSYSTEM ]</span>
+        </div>
+
+        <div class="ecosystem-intro">
+          <h2 id="skills-heading" class="editorial-title">
+            My Technical Ecosystem.
+          </h2>
+          <p class="ecosystem-tagline">
+            Different technologies. One connected system.
+          </p>
+          <p class="ecosystem-desc">
+            Things I build with. A connected view of how I write software — from computer science fundamentals and algorithmic problem solving to shipped production applications. Select any node or project to trace architecture pathways.
+          </p>
+        </div>
+
+        <!-- Ecosystem Graph Controls Bar -->
+        <div class="graph-controls-bar">
+          <div class="filter-btn-group" role="tablist" aria-label="Knowledge Graph Filters">
+            <button class="graph-ctrl-btn active" data-graph-filter="all" role="tab" aria-selected="true">All Technologies</button>
+            <button class="graph-ctrl-btn" data-graph-filter="projects" role="tab" aria-selected="false">Explore by Project</button>
+            <button class="graph-ctrl-btn" data-graph-filter="languages" role="tab" aria-selected="false">Languages</button>
+            <button class="graph-ctrl-btn" data-graph-filter="development" role="tab" aria-selected="false">Development</button>
+            <button class="graph-ctrl-btn" data-graph-filter="data" role="tab" aria-selected="false">Data & Cloud</button>
+            <button class="graph-ctrl-btn" data-graph-filter="workflow" role="tab" aria-selected="false">Workflow</button>
+            <button class="graph-ctrl-btn" data-graph-filter="cs" role="tab" aria-selected="false">Computer Science</button>
+          </div>
+
+          <div class="graph-actions-group">
+            <div class="graph-search-wrap">
+              <span class="search-icon mono-text">⌕</span>
+              <input type="text" id="graph-search-input" class="graph-search-input mono-text" placeholder="Search technology or project..." aria-label="Search technology or project in knowledge graph">
+            </div>
+            <button id="graph-zoom-in" class="graph-tool-btn" title="Zoom in" aria-label="Zoom in">+</button>
+            <button id="graph-zoom-out" class="graph-tool-btn" title="Zoom out" aria-label="Zoom out">−</button>
+            <button id="graph-reset-btn" class="graph-tool-btn mono-text" title="Reset visualization" aria-label="Reset visualization">RESET</button>
+          </div>
+        </div>
+
+        <!-- Interactive Knowledge Graph Container -->
+        <div class="graph-viewport-wrapper">
+          <div class="graph-svg-container" id="graph-container">
+            <svg id="ecosystem-svg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-label="Interactive Technology Knowledge Graph">
+              <defs>
+                <!-- Central Node Radial Pulse Gradient -->
+                <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#B72D37" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#B72D37" stop-opacity="0"/>
+                </radialGradient>
+                <!-- Marker for directional arrows -->
+                <marker id="arrow" viewBox="0 0 10 10" refX="16" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="rgba(183, 45, 55, 0.6)"/>
+                </marker>
+              </defs>
+
+              <!-- SVG Connection Links Group -->
+              <g id="graph-links" class="graph-links-group"></g>
+
+              <!-- SVG Nodes Group -->
+              <g id="graph-nodes" class="graph-nodes-group"></g>
+            </svg>
+          </div>
+
+          <!-- Live Contextual Node Inspector Panel -->
+          <aside class="graph-inspector-card" id="graph-inspector" aria-live="polite">
+            <div class="inspector-card-header">
+              <span class="inspector-badge mono-text" id="insp-category">// SELECTED ENTITY</span>
+              <span class="inspector-status-dot"></span>
+            </div>
+            <div class="inspector-card-body">
+              <h3 class="inspector-title" id="insp-title">Khushi Jain Daga</h3>
+              <p class="inspector-subtitle mono-text" id="insp-role">CORE DEVELOPER IDENTITY</p>
+              <p class="inspector-narrative" id="insp-desc">
+                Select any technology node or project anchor in the ecosystem above to illuminate verified architectural connections, relevant production experience, and practical usage.
+              </p>
+
+              <div class="inspector-meta-block" id="insp-projects-block">
+                <span class="meta-block-label mono-text">VERIFIED IN PROJECTS:</span>
+                <div class="meta-tag-pills" id="insp-project-tags">
+                  <span class="tag-pill active">Examon Education</span>
+                  <span class="tag-pill active">Qampus</span>
+                  <span class="tag-pill active">TeamSpace</span>
+                </div>
+              </div>
+
+              <div class="inspector-meta-block" id="insp-workflow-block">
+                <span class="meta-block-label mono-text">ROLE IN WORKFLOW:</span>
+                <p class="meta-workflow-text" id="insp-workflow-text">
+                  Harmonizing full-stack web engineering, 3D spatial interfaces, and clean software architecture.
+                </p>
+              </div>
+
+              <div class="inspector-action-wrap" id="insp-action-wrap" style="display: none;">
+                <a href="#work" class="btn-magnetic inspector-cta-btn" id="insp-action-btn">
+                  <span class="btn-text">View Detailed Showcase</span>
+                  <span class="btn-icon">↗</span>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- ==========================================================================
+             TASK 03: INTERACTIVE SYSTEM BUILDER ("HOW I BUILD")
+             ========================================================================== -->
+        <div class="system-builder-wrapper" id="system-builder">
+          <div class="sb-header-bar">
+            <div>
+              <span class="sb-tag mono-text">// PRACTICAL SOFTWARE ARCHITECTURE</span>
+              <h3 class="sb-title">How I Build.</h3>
+              <p class="sb-desc">
+                Select one of my production projects below to inspect its live information flow — from user interface state to cloud persistence.
+              </p>
+            </div>
+            <!-- Project Selection Pills -->
+            <div class="sb-project-selector" role="tablist" aria-label="System Architecture Project Selector">
+              <button class="sb-pill-btn active" data-build-project="qampus" role="tab" aria-selected="true">
+                <span class="sb-pill-num mono-text">01</span> Qampus (3D Spatial Campus)
+              </button>
+              <button class="sb-pill-btn" data-build-project="examon" role="tab" aria-selected="false">
+                <span class="sb-pill-num mono-text">02</span> Examon Education (EdTech LMS)
+              </button>
+              <button class="sb-pill-btn" data-build-project="teamspace" role="tab" aria-selected="false">
+                <span class="sb-pill-num mono-text">03</span> TeamSpace (Cloud Workspace)
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Pipeline Flow Container -->
+          <div class="sb-pipeline-board">
+            <div class="sb-flow-ribbon" id="sb-flow-ribbon">
+              <!-- Dynamically populated stages with animated data pulses -->
+            </div>
+
+            <!-- Deep Dive Layer Explanation Panel -->
+            <div class="sb-layer-explanation" id="sb-layer-detail">
+              <div class="layer-exp-badge mono-text" id="sb-layer-badge">STAGE 01 // SELECTED ARCHITECTURAL COMPONENT</div>
+              <h4 class="layer-exp-title" id="sb-layer-title">Panoramic 360° User Viewport</h4>
+              <p class="layer-exp-text" id="sb-layer-desc">
+                Captures user viewpoint rotation, camera FOV changes, and floor navigation switches. Dispatches coordinate state changes to React lifecycle hooks with zero main-thread lag.
+              </p>
+              <div class="layer-exp-specs mono-text" id="sb-layer-specs">
+                <span>TECH: REACT.JS + THREE.JS CANVAS</span>
+                <span>• LATENCY: &lt;16MS (60 FPS)</span>
+                <span>• STATUS: VERIFIED IN QAMPUS REPO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 04: PROFESSIONAL EXPERIENCE & TIMELINE (OBSIDIAN DARK SECTION)
+         ========================================================================== -->
+    <section id="experience" class="editorial-section dark-experience-wrapper" aria-labelledby="exp-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <span class="section-tag mono-text">04 // PROFESSIONAL TENURE & CHRONOLOGY</span>
+          <span class="section-serial mono-text">[ RESUME VERIFIED INTERNSHIPS ]</span>
+        </div>
+
+        <div class="experience-layout">
+          <!-- Sticky Column: Title & Mission Statement -->
+          <div class="exp-sticky-col">
+            <h2 id="exp-heading" class="editorial-title light-text">
+              Real-world engineering through rigorous internship practice.
+            </h2>
+            <p class="exp-side-desc mono-text">
+              Three progressive software engineering internship appointments across enterprise EdTech and dynamic startup environments.
+            </p>
+            <div class="tenure-badge mono-text">
+              <span>OCT 2023 — PRESENT</span>
+              <span>• VERIFIED TENURE</span>
+            </div>
+          </div>
+
+          <!-- Scrollable Timeline Column -->
+          <div class="exp-timeline-col">
+            <!-- Tenure 01 -->
+            <div class="timeline-card">
+              <div class="t-header">
+                <span class="t-period mono-text">MAR 2026 — PRESENT</span>
+                <span class="t-status-badge active mono-text">CURRENT ROLE</span>
+              </div>
+              <h3 class="t-role">Full Stack Developer Intern</h3>
+              <h4 class="t-company">Examon Education</h4>
+              <p class="t-desc">
+                Leading end-to-end full stack feature integrations, reusable React architectural patterns, and cloud authentication systems for dynamic learning environments.
+              </p>
+              <ul class="t-bullet-list">
+                <li>Developing modular, reusable React.js and Firebase components for production student dashboards.</li>
+                <li>Conducting rigorous responsive cross-device testing, edge-case debugging, and performance audits.</li>
+                <li>Collaborating with cross-functional product stakeholders to deliver rapid bi-weekly sprint deliverables.</li>
+              </ul>
+              <div class="t-tags mono-text">
+                <span>REACT.JS</span><span>FIREBASE</span><span>FULL STACK</span><span>RESPONSIVE TESTING</span>
+              </div>
+            </div>
+
+            <!-- Tenure 02 -->
+            <div class="timeline-card">
+              <div class="t-header">
+                <span class="t-period mono-text">AUG 2025 — JUN 2026</span>
+                <span class="t-status-badge mono-text">COMPLETED</span>
+              </div>
+              <h3 class="t-role">Frontend Developer Intern</h3>
+              <h4 class="t-company">Examon Education</h4>
+              <p class="t-desc">
+                Engineered interactive student management modules, course progress visualizers, and polished responsive interfaces under strict Git release cycles.
+              </p>
+              <ul class="t-bullet-list">
+                <li>Architected scalable frontend views for video lecture navigation and syllabus tracking.</li>
+                <li>Implemented strict accessibility checks (WCAG 2.1) across student-facing portals.</li>
+                <li>Maintained clean Git branching, pull request reviews, and release branch deployments.</li>
+              </ul>
+              <div class="t-tags mono-text">
+                <span>FRONTEND</span><span>UI ENGINEERING</span><span>GIT WORKFLOW</span><span>PROGRESS TRACKING</span>
+              </div>
+            </div>
+
+            <!-- Tenure 03 -->
+            <div class="timeline-card">
+              <div class="t-header">
+                <span class="t-period mono-text">OCT 2023 — JUL 2025</span>
+                <span class="t-status-badge mono-text">FOUNDATIONAL TENURE</span>
+              </div>
+              <h3 class="t-role">Frontend Intern</h3>
+              <h4 class="t-company">Urban Biotix Pvt. Ltd.</h4>
+              <p class="t-desc">
+                Delivered responsive web interfaces, corporate website templates, and robust client registration form routing logic.
+              </p>
+              <ul class="t-bullet-list">
+                <li>Designed high-fidelity responsive page layouts translating Figma designs into clean HTML5/CSS3.</li>
+                <li>Programmed client-side input validation, error handling, and form routing mechanisms.</li>
+                <li>Optimized image and stylesheet payload sizes to accelerate initial page loads.</li>
+              </ul>
+              <div class="t-tags mono-text">
+                <span>HTML5 / CSS3</span><span>JAVASCRIPT</span><span>FORM ROUTING</span><span>WEB TEMPLATES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 05: ACHIEVEMENTS & LEADERSHIP
+         ========================================================================== -->
+    <section id="achievements" class="editorial-section" aria-labelledby="honors-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <span class="section-tag mono-text">05 // HONORS, LEADERSHIP & COMPETITIONS</span>
+          <span class="section-serial mono-text">[ RESUME VERIFIED MILESTONES ]</span>
+        </div>
+
+        <div class="honors-grid">
+          <!-- Achievement 01: HackQuest -->
+          <div class="honor-panel highlight-honor">
+            <div class="honor-meta mono-text">
+              <span>SMART INDIA HACKATHON 2026 PRELIMS</span>
+              <span class="honor-badge">1ST RUNNER-UP</span>
+            </div>
+            <div class="honor-big-stat">₹11,000</div>
+            <h3 class="honor-title">1st Runner-up · JECRC HackQuest 9.0</h3>
+            <p class="honor-desc">
+              Demonstrated exceptional engineering innovation and rapid prototyping during the prestigious Smart India Hackathon (SIH) 2026 prelims. Selected among the <strong>Top 20 finalists from over 290+ participating engineering teams</strong>, earning an ₹11,000 cash recognition.
+            </p>
+            <div class="honor-footer mono-text">
+              <span>STATUS: TOP 20 OF 290+ TEAMS</span>
+              <span>AWARD: ₹11,000 CASH PRIZE</span>
+            </div>
+          </div>
+
+          <!-- Leadership 02: JUMakerspace -->
+          <div class="honor-panel">
+            <div class="honor-meta mono-text">
+              <span>CORE TEAM LEADERSHIP</span>
+              <span class="honor-badge">SEPT 2023 — DEC 2025</span>
+            </div>
+            <div class="honor-big-stat">2+ YRS</div>
+            <h3 class="honor-title">Finance Co-lead · JUMakerspace</h3>
+            <p class="honor-desc">
+              Served as a core organizational team member and Finance Co-lead for JECRC University's flagship innovation hub, JUMakerspace. Supervised fiscal budgets, managed technical resource allocation, and facilitated hands-on student engineering workshops.
+            </p>
+            <div class="honor-footer mono-text">
+              <span>ROLE: CORE TEAM LEAD</span>
+              <span>FOCUS: RESOURCE & BUDGET MANAGEMENT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             SECTION 06: CERTIFICATIONS & CREDENTIALS
+             ========================================================================== -->
+        <div class="certifications-container">
+          <div class="section-sub-header">
+            <span class="section-tag mono-text">06 // ACCREDITATIONS & CERTIFICATIONS</span>
+            <span class="section-serial mono-text">[ VERIFIED RESUME CREDENTIALS ]</span>
+          </div>
+
+          <div class="cert-editorial-list">
+            <div class="cert-item">
+              <div class="cert-col-id mono-text">CERT.01</div>
+              <div class="cert-col-info">
+                <h4 class="cert-title">Introduction to Agent Skills</h4>
+                <p class="cert-org mono-text">ANTHROPIC</p>
+              </div>
+              <div class="cert-col-focus">Prompt architecture, tool-augmented agents, and autonomous skill patterns.</div>
+              <div class="cert-col-tag mono-text">AI AGENTIC SYSTEMS</div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-col-id mono-text">CERT.02</div>
+              <div class="cert-col-info">
+                <h4 class="cert-title">Introduction to Model Context Protocol (MCP)</h4>
+                <p class="cert-org mono-text">ANTHROPIC</p>
+              </div>
+              <div class="cert-col-focus">Standardized client-server context protocols for real-time model integration.</div>
+              <div class="cert-col-tag mono-text">MCP PROTOCOLS</div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-col-id mono-text">CERT.03</div>
+              <div class="cert-col-info">
+                <h4 class="cert-title">Google Cloud Computing Foundations</h4>
+                <p class="cert-org mono-text">GOOGLE CLOUD</p>
+              </div>
+              <div class="cert-col-focus">Cloud infrastructure, IAM security, compute instances, and database storage.</div>
+              <div class="cert-col-tag mono-text">CLOUD FOUNDATIONS</div>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-col-id mono-text">CERT.04</div>
+              <div class="cert-col-info">
+                <h4 class="cert-title">Core to Advanced Python</h4>
+                <p class="cert-org mono-text">PREGRAD</p>
+              </div>
+              <div class="cert-col-focus">Advanced object-oriented programming, data structures, and script automation.</div>
+              <div class="cert-col-tag mono-text">PYTHON MASTERY</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 07: CONTACT & TRANSMISSION
+         ========================================================================== -->
+    <section id="contact" class="editorial-section dark-experience-wrapper contact-section" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <span class="section-tag mono-text">07 // TRANSMISSION & INQUIRY</span>
+          <span class="section-serial mono-text">[ OPEN FOR OPPORTUNITIES ]</span>
+        </div>
+
+        <div class="contact-editorial-grid">
+          <!-- Oversized Headline Column -->
+          <div class="contact-heading-col">
+            <h2 id="contact-heading" class="contact-giant-title">
+              HAVE SOMETHING<br>
+              <em>INTERESTING</em><br>
+              IN MIND?
+            </h2>
+            <p class="contact-statement">
+              Currently open to entry-level software engineering roles, full-stack development internships, and collaborative creative projects.
+            </p>
+
+            <div class="contact-direct-channels">
+              <div class="channel-item">
+                <span class="ch-label mono-text">// UNIVERSITY EMAIL</span>
+                <a href="mailto:khushi.23bcon1665@jecrcu.edu.in" class="ch-link">
+                  khushi.23bcon1665@jecrcu.edu.in
+                </a>
+              </div>
+              <div class="channel-item">
+                <span class="ch-label mono-text">// PROFESSIONAL NETWORKS</span>
+                <div class="social-links-row">
+                  <a href="https://www.linkedin.com/in/khushi-jain-daga" target="_blank" rel="noopener noreferrer" class="social-pill">
+                    LinkedIn ↗
+                  </a>
+                  <a href="https://github.com/khushi-jain-daga" target="_blank" rel="noopener noreferrer" class="social-pill">
+                    GitHub ↗
+                  </a>
+                  <a href="resume.pdf" download="Khushi_Jain_Daga_Resume.pdf" class="social-pill accent-pill">
+                    Download Résumé ↓
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col">
+            <div class="form-editorial-card">
+              <div class="form-header-bar mono-text">
+                <span>[ CLIENT-SIDE INQUIRY DRAFTING ]</span>
+                <span class="form-status-dot"></span>
+              </div>
+
+              <form id="contact-form" class="editorial-form" novalidate>
+                <div class="input-row">
+                  <div class="form-field">
+                    <label for="form-name" class="mono-text">YOUR NAME <span class="req">*</span></label>
+                    <input type="text" id="form-name" name="name" required minlength="2" autocomplete="name" placeholder="E.g. Elena Vance">
+                    <span class="field-error-msg" id="name-error-msg" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="form-email" class="mono-text">YOUR EMAIL <span class="req">*</span></label>
+                    <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="name@organization.com">
+                    <span class="field-error-msg" id="email-error-msg" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="form-subject" class="mono-text">SUBJECT / INQUIRY TYPE</label>
+                  <input type="text" id="form-subject" name="subject" placeholder="Software Engineering Opportunity / Project Discussion">
+                </div>
+
+                <div class="form-field">
+                  <label for="form-message" class="mono-text">TRANSMISSION MESSAGE <span class="req">*</span></label>
+                  <textarea id="form-message" name="message" required minlength="10" rows="5" placeholder="Detail your project requirements, scope, or career opportunity..."></textarea>
+                  <span class="field-error-msg" id="message-error-msg" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" class="btn-magnetic form-submit-btn">
+                  <span class="btn-text">Transmit Inquiry via Email Client</span>
+                  <span class="btn-icon">↗</span>
+                </button>
+
+                <p class="form-disclaimer mono-text">
+                  * Note: Compiles a standardized mailto draft for your default mail client; no third-party server intercepts or stores your transmission.
+                </p>
+
+                <div id="form-feedback-box" class="form-feedback-box" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Top Interaction -->
+        <div class="back-to-top-container">
+          <button id="back-to-top-btn" class="back-to-top-editorial" aria-label="Return to top of page">
+            <span class="btt-arrow">↑</span>
+            <span class="btt-text mono-text">RETURN TO APEX</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="editorial-footer">
+    <div class="wrap footer-content">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-monogram">KJD</span>
+          <span class="brand-caption mono-text">KHUSHI JAIN DAGA · ROLL 23BCON1665</span>
+        </div>
+        <p class="footer-academic-meta mono-text">
+          JECRC UNIVERSITY · B.TECH CSE (VII SEM) · EXPERIMENT 01: RESPONSIVE PORTFOLIO
+        </p>
+      </div>
+
+      <div class="footer-center mono-text">
+        <span>SWISS EDITORIAL AESTHETIC</span>
+        <span class="bullet">▪</span>
+        <span>HTML5 / CSS3 / ES6+</span>
+        <span class="bullet">▪</span>
+        <span>NO FRAMEWORKS</span>
+      </div>
+
+      <div class="footer-right mono-text">
+        <span>© 2026 KHUSHI JAIN DAGA. ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
